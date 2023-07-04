@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Open+Sans:wght@400;700&family=PT+Sans&family=Unbounded:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 60px;
+    background-color: #18191c;
+    color: #eaeaea;
+    font-family: 'Inter';
+    overflow-x: hidden;
+  
+}
+header h1{
+    font-family: 'Unbounded', cursive;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #18191c;
+    z-index: 1;
+   
+    
+
+}
+nav{
+    display: flex;
+    font-size: large;
+    gap: 70px;
+    
+}
+nav a{
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+nav a:hover{
+    color: rgb(240, 91, 116);
+    text-shadow: 2px 2px 30px  rgb(240, 91, 116);
+    transition: all 0.4s;
+}
+
+header button{
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: #eaeaea;
+    background: linear-gradient(
+        225deg,
+        #ffcaff 0%,
+        #784ba0 50%,
+        #2b86c5 100%
+
+    ); 
+}
+/* karşılama alanı */
+.hero{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+     margin: 80px 0; 
+}
+/* sol taraf */
+.hero .left{
+    max-width: 700px;
+}
+.hero .left h1{
+    font-family:'open sans';
+    font-size: 80px;
+    font-weight: 700;
+    
+}
+.hero .left h1 span{
+    color: rgb(165, 165, 238);
+}
+.left-info{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center;
+}
+.left-info div{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(120deg, purple 30%, blue 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.left-info div:hover{
+    background: linear-gradient(240deg, purple 30%, blue 100%);
+
+}
+.left-info p{
+    max-width: 400px;
+
+}
+/* sağ taraf */
+.hero .right img{
+    transition: 500ms,scale;
+    cursor: pointer;
+}
+
+.hero .right img:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: #fff;
+    z-index: -1;
+  
+
+}
+
+
+.hero .right{
+    max-width: 700px;
+}
+.hero .right img{
+    width: 100%;
+}
+
+/* markalar */
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+/* Drops */
+.drops-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.drops-sec h1{
+    font-size: 45px;
+    font-family: sans-serif;
+}
+.categories{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.categories li {
+    list-style: none;
+    background:gray;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.categories li:hover{
+    background:linear-gradient(240deg, purple 30%, blue 100%); ;
+}
+/* kartlar */
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1250px;
+    
+    
+
+}
+/* kart */
+.card{
+    width: 280px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.cards .card h2{
+    font-family: sans-serif;
+    font-size: bold;
+}
+.card-img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card-info .price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.card-info .price p{
+    color: #784ba0;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+.card-info .price img{
+    
+    width: 25px;
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid gray;
+    padding-top: 20px;
+    align-items: center;
+
+
+}
+.card-footer p{
+    background: rgb(201, 192, 192);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #784ba0;
+    font-weight: bold;
+}
+
+.card-footer button{
+    border: none;
+    background-color: white;
+    font-family: sans-serif;
+    color:blueviolet ;
+    cursor: pointer;
+}
+.card-footer button:hover{
+    background-color: rgb(205, 197, 197);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.ad{
+    background-color: rgb(27, 184, 184);
+    margin: 100px -120px;
+    text-align: center;
+    font-size: 116px;
+    font-weight: 500;
+    font-family: sans-serif;
+    transform: rotate(-6deg);
+    white-space: nowrap;
+    letter-spacing: 20px;
+    text-shadow:2px 2px 20px white ;
+    cursor: pointer;
+}
+.info-sec{
+    margin-top: 200px;
+}
+.info-sec h1{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.info-cards{
+    display: flex;
+    gap: 40px;
+    justify-content:space-between ;
+    margin-bottom: 40px;
+}
+.info-card{
+    background-color: #300556;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+}
+.info-card img{
+    width: 50px;
+}
+header .nav-btn {   
+   
+    cursor: pointer;
+    border: none;
+    right: 20px;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: #eaeaea;
+    background: linear-gradient(
+        225deg,
+        #ffcaff 0%,
+        #784ba0 50%,
+        #2b86c5 100%
+
+    ); 
+  
+   
+
+}
+.nav-btn{
+    display: none;
+}
+
+.left-info div{
+    padding: 0 30px;
+}
+#checkbox:checked+nav{
+    display: inline-block;
+    
+   
+}
+
+#checkbox{
+    display: none;
+}
+
+
+
+
+
+
+/* Responsive */
+@media(min-width:1000px){
+    .hero .left{
+        max-width: 900px;
+    }
+    .left-info p{
+        max-width: 600px;
+    }
+}
+@media(max-width:1500px){
+    .hero {
+        flex-direction: column;
+    }
+    .hero .left{
+        max-width: 900px;
+    }
+    .hero .right {
+        order:-1;
+    }
+    
+}
+@media(max-width:800px){
+    .cards{
+        justify-content: center;
+       
+    }
+   
+
+    .nav-btn{
+        display: inline-block;
+        
+    
+       
+
+       
+    }
+    .contact-btn{
+        display: none;
+    }
+        nav {
+        display: none;
+    }
+}
+@media(max-width:1000px){
+    .info-cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+}
